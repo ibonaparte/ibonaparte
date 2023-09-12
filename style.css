@@ -1,0 +1,359 @@
+/*Global Styles*/
+*{
+    font-family: 'Jetbrains Mono';
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-size: 36px;
+    margin: 5px 0 5px 0;
+}
+
+h2{
+    font-size: 24px;
+    margin: 5px 0 5px 0;
+    font-weight: 100;
+}
+
+.section-header{
+    text-align: center;
+    font-size: 32px;
+}
+
+.mob-only{
+    display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+   
+
+
+/*Profile Card*/
+.profile-card-container{
+    max-width: 575px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 90px 0 90px 0;
+}
+
+.profile-img{
+    max-width: 230px;
+}
+
+.profile-img img{
+    width: 100%;
+    border-radius:50%;
+}
+
+
+.profile-content{
+    margin-left: 60px;
+}
+
+.cta-link{
+    text-decoration: none;
+}
+
+.main-cta{
+    height: 56px;
+    width: 278px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin: 9px 0 9px 0;
+    
+    
+}
+
+.main-cta span{
+    line-height: 56px;
+    font-size: 24px;
+}
+
+/*Value Points Section*/
+.value-section{
+    background-color: #080752;
+    color: white;
+    padding: 45px 0 45px 0;
+}
+
+.value-props-container{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 1800px;
+}
+
+.value-prop{
+    width: 33%;
+    text-align: center;
+}
+
+.value-prop img{
+    max-height: 120px;
+    width: auto;
+}
+
+.value-prop-title{
+    margin-top: 11px;
+    font-size: 24px;
+}
+
+.value-prop-copy{
+    width: 73%;
+    max-width: 350px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+/*Projects Section*/
+.projects-section{
+    padding: 35px 0 35px 0;
+    background-color: #F0F0F0;
+}
+
+.project-card{
+    display: flex;
+    background-color: white;
+    border-radius: 25px;
+    width: 90%;
+    max-width: 1380px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: -5px 5px 4px rgba(0,0,0,0.25);
+    padding: 40px 20px;
+}
+
+.project-imgs-container{
+    width: 40%;
+    margin: 0 80px 0 60px;
+    overflow-y: auto;
+    padding-right: 5px;
+    padding-left: 6px;
+}
+
+.screenshot-container{
+    max-height: 340px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.screenshot-container:first-of-type{
+    margin-top: 0px!important;
+}
+
+.screenshot{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: -5px 5px 4px rgba(0,0,0,0.25);
+    cursor: pointer;
+}
+
+.thumb-tile{
+    max-height: 340px;
+}
+
+.project-description-container{
+    width: 60%;
+    max-width: 630px;
+}
+
+.project-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.copy-section{
+    margin-top: 15px;
+}
+
+.project-year{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 15px;
+}
+
+
+/*Footer*/
+.footer{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer-button{
+    height: 56px;
+    width: 278px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.footer-button a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.footer-resume{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-email{
+    color: white;
+}
+
+
+
+#linkedIn-img{
+    width: 161px;
+}
+
+#download-img{
+    width: 36px;
+    padding: 10px;
+}
+
+.projects-read-more{
+    display: none;
+}
+
+/*Modals*/
+
+
+/*Media Queries*/
+@media (max-width:992px){
+    .dt-only{
+        display: none;
+    }
+
+    .mob-only{
+        display: block;
+    }
+
+    /*Profile Cards*/
+    .profile-card-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-content{
+        margin-left: unset;
+    }
+
+    .main-cta{
+        margin-top: 21px;
+    }
+
+    /*Value Props*/
+    .value-props-container{
+        flex-direction: column;
+    }
+
+    .value-prop{
+        width: 90%;
+        margin: auto;
+        padding: 20px 0 20px 0;
+    }
+
+    .value-prop img{
+        max-height: 100px;
+    }
+
+    /*Projects Section*/
+    .project-imgs-container{
+        margin: unset; /*to do*/
+        overflow: auto;
+        white-space: nowrap;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+
+    .screenshot-container{
+        display: inline-block;
+    }
+
+    .mob-slider{
+        width: 85%;
+        padding-bottom: 6px;
+    }
+
+    .screenshot{
+        width: 100%;
+        max-height: 220px;
+        
+    }
+
+    .projects-section{
+        background-color: white;
+    }
+    .project-card{
+        flex-direction: column-reverse;
+        box-shadow: unset;
+    }
+
+    .project-description-container{
+        margin: auto;
+        width: 90%;
+        position: relative;
+        transition: all .4s ease;
+    }
+
+
+
+    .projects-read-more{
+        display: block;
+        height: 56px;
+        border: 1px solid black;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;    
+        margin-top: 16px; 
+        background-color: white;   
+    }
+    
+    .projects-read-more span{
+        color: black;
+        line-height: 56px;
+        font-size: 24px;
+    }
+
+
+    /*Footer Section*/
+    
+}
